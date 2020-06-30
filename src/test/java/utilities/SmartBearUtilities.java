@@ -9,19 +9,21 @@ import java.util.List;
 
 public class SmartBearUtilities {
 
+
     public static void login(WebDriver driver){
-        //  3. Enter username: "Tester"
+        //3. Enter username: “Tester”
         WebElement inputUsername = driver.findElement(By.xpath("//input[@id='ctl00_MainContent_username']"));
         inputUsername.sendKeys("Tester");
 
-        //  4. Enter password: "test"
+        //4. Enter password: “test”
         WebElement inputPassword = driver.findElement(By.xpath("//input[@id='ctl00_MainContent_password']"));
         inputPassword.sendKeys("test");
 
-        //  5. Click to Login button
+        //5. Click to Login button
         WebElement loginButton = driver.findElement(By.xpath("//input[@id='ctl00_MainContent_login_button']"));
         loginButton.click();
     }
+
 
     /*
     @param: WebDriver driver, String name
