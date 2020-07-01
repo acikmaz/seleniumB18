@@ -15,11 +15,32 @@ public class DriverUtilsPractice {
     public void driver_practice(){
         Driver.getDriver().get("https://www.google.com");
 
+        // Singleton.getWord();
         WebElement googleSearch = Driver.getDriver().findElement(By.name("q"));
 
         googleSearch.sendKeys(ConfigurationReader.getProperty("testdata") + Keys.ENTER);
 
 
     }
+
+
+    @Test
+    public void singleton_practice(){
+        String str1 = Singleton.getWord();
+        System.out.println("str1 = " + str1);
+
+        String str2 = Singleton.getWord();
+        System.out.println("str2 = " + str2);
+
+        String str3 = Singleton.getWord();
+        System.out.println("str3 = " + str3);
+    }
+
+    @Test
+    public void singleton_practice2(){
+        String str4 = Singleton.getWord();
+        System.out.println("str4 = " + str4);
+    }
+
 
 }
