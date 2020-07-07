@@ -48,7 +48,7 @@ public class WindowsTabsPractice {
             driver.switchTo().window(each);
             System.out.println(driver.getTitle());
         }
-
+        
 
     }
 
