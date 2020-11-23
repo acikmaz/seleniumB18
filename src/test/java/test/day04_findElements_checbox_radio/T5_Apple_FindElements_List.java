@@ -51,7 +51,7 @@ public class T5_Apple_FindElements_List {
                 }
             }
             driver.navigate().back();
-            appleHeader = driver.findElements(By.xpath("//ul[@class='ac-gn-list']/li/a"));
+           // appleHeader = driver.findElements(By.xpath("//ul[@class='ac-gn-list']/li/a"));
         }
         System.out.println("Number of EmptyLinks: \t" + emptyLinkCounter);
         System.out.println("Number of Links with text: \t" + linksWithText);

@@ -50,5 +50,7 @@ public class TC5_selfPractice {
         }
     // Print out results in validation formats
 
+        driver.close();
+
     }
 }

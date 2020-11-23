@@ -18,6 +18,6 @@ public class GetTextVSGetAttribute {
         System.out.println("get text method: " + driver.findElement(By.linkText("Gmail")).getText());
         System.out.println("get attribute value method:" + driver.findElement(By.linkText("Gmail")).getAttribute("href"));
 
-
+        driver.close();
     }
 }

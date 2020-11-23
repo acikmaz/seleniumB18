@@ -31,6 +31,14 @@ public class LoginPage {
     //locating error message
     @FindBy(xpath = "//div[@class='alert alert-error']")
     public WebElement errorMessage;
+    //manageInterestCollectionLinkOnBottom
+    //miclob // no acronym
+
+
+
+    //locating forgot your password
+    @FindBy(linkText = "Forgot your password?")
+    public WebElement forgotPasswordLink;
 
     public void login(String username, String password){
         usernameInput.clear();
@@ -40,3 +48,21 @@ public class LoginPage {
         loginButton.click();
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
